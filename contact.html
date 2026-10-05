@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Racing Alliance</title>
+  <meta name="description" content="Contactez le Racing Alliance de Saint-Louis du Sénégal : adresse du Stade du Fleuve, téléphone, courriel et formulaire.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23081B3C'/%3E%3Ctext x='16' y='22' font-family='Arial Black,Arial' font-size='14' font-weight='900' fill='%23fff' text-anchor='middle'%3RA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="entete" id="entete">
+    <div class="entete-interne">
+      <a class="logo" href="index.html" aria-label="Racing Alliance — Accueil">
+        <span class="logo-ecusson" aria-hidden="true">
+          <svg viewBox="0 0 40 44" focusable="false">
+            <path d="M2 2h36v24L20 42 2 26Z" fill="#081B3C"/>
+            <path d="M8 8h24v16L20 34 8 24Z" fill="none" stroke="#F5F1E6" stroke-width="2"/>
+            <text x="20" y="23" text-anchor="middle" font-size="13" font-weight="900" fill="#F5F1E6" font-family="Arial Black, Arial, sans-serif">RA</text>
+          </svg>
+        </span>
+        <span class="logo-texte">
+          <strong>Racing Alliance</strong>
+          <small>Saint-Louis · Sénégal</small>
+        </span>
+      </a>
+
+      <nav class="navigation" id="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" data-page="index.html">Accueil</a></li>
+          <li><a href="club.html" data-page="club.html">Le club</a></li>
+          <li><a href="effectif.html" data-page="effectif.html">Effectif</a></li>
+          <li><a href="palmares.html" data-page="palmares.html">Palmarès</a></li>
+          <li><a href="maillots.html" data-page="maillots.html">Maillots</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="bouton-menu" id="bouton-menu" aria-expanded="false" aria-controls="navigation">
+        <span class="bouton-menu-barre" aria-hidden="true"></span>
+        <span class="bouton-menu-barre" aria-hidden="true"></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="page-tete">
+      <p class="page-kicker" data-reveal>Contact</p>
+      <h1 class="page-titre" data-reveal>Écrivez-nous,<br>la Digue vous répond.</h1>
+    </section>
+
+    <section class="section">
+      <div class="contact-grille">
+
+        <form class="formulaire" id="formulaire-contact" novalidate data-reveal>
+          <header class="section-tete">
+            <span class="section-num">01</span>
+            <h2>Formulaire</h2>
+          </header>
+
+          <p class="champ">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom" placeholder="Ex.&nbsp;: Awa Ndiaye" required autocomplete="name">
+          </p>
+
+          <p class="champ">
+            <label for="courriel">Adresse électronique</label>
+            <input type="email" id="courriel" name="courriel" placeholder="exemple@domaine.sn" required autocomplete="email">
+          </p>
+
+          <p class="champ">
+            <label for="sujet">Sujet</label>
+            <select id="sujet" name="sujet">
+              <option value="general">Question générale</option>
+              <option value="maillots">Maillots et équipement</option>
+              <option value="formation">Centre de formation</option>
+              <option value="billetterie">Billetterie</option>
+              <option value="partenariat">Partenariat</option>
+            </select>
+          </p>
+
+          <p class="champ">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message…" required></textarea>
+          </p>
+
+          <p class="champ-actions">
+            <button type="submit" class="bouton bouton-plein">Envoyer le message →</button>
+          </p>
+
+          <p class="formulaire-retour" id="formulaire-retour" role="status" hidden>
+            Merci&nbsp;! Votre message a bien été préparé. Le secrétariat du club
+            vous répondra dans les meilleurs délais.
+          </p>
+          <p class="formulaire-note">Ce site est une vitrine statique&nbsp;: aucune donnée n’est envoyée ni stockée.</p>
+        </form>
+
+        <aside class="coordonnees" data-reveal>
+          <header class="section-tete">
+            <span class="section-num">02</span>
+            <h2>Coordonnées</h2>
+          </header>
+
+          <ul class="liste-coordonnees">
+            <li>
+              <strong>Siège &amp; stade</strong>
+              <span>Stade du Fleuve — Boulevard de la Digue<br>Quartier de Sor, Saint-Louis, Sénégal</span>
+            </li>
+            <li>
+              <strong>Téléphone</strong>
+              <span>+221 33 961 XX XX<br>(secrétariat, du lundi au vendredi)</span>
+            </li>
+            <li>
+              <strong>Courriel</strong>
+              <span>bonjour@racing-alliance.sn</span>
+            </li>
+            <li>
+              <strong>Horaires du secrétariat</strong>
+              <span>Lundi – Vendredi&nbsp;: 9 h – 17 h<br>Samedi&nbsp;: 9 h – 12 h (jours de match&nbsp;: ouvert)</span>
+            </li>
+          </ul>
+
+          <div class="encart-acces">
+            <strong>Venir au stade</strong>
+            <p>Depuis le pont Faidherbe, traverser vers la rive droite (Sor),
+               puis suivre le fleuve sur 800 mètres. La tribune «&nbsp;la Digue&nbsp;»
+               fait face à l’eau — impossible à manquer.</p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="pied-interne">
+      <div class="pied-marque">
+        <strong>Racing Alliance</strong>
+        <p>Club de football — Saint-Louis du Sénégal.<br>Stade du Fleuve, quartier de Sor.</p>
+      </div>
+      <nav class="pied-nav" aria-label="Navigation de pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="club.html">Le club</a>
+        <a href="effectif.html">Effectif</a>
+        <a href="palmares.html">Palmarès</a>
+        <a href="maillots.html">Maillots</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="pied-note">© <span id="annee">2026</span> Racing Alliance — Tous droits réservés. Site vitrine sans backend.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

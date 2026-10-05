@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maillots — Racing Alliance</title>
+  <meta name="description" content="Les trois maillots du Racing Alliance : domicile bleu nuit, extérieur blanc et third bleu ciel. Visualisez face avant et face arrière.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23081B3C'/%3E%3Ctext x='16' y='22' font-family='Arial Black,Arial' font-size='14' font-weight='900' fill='%23fff' text-anchor='middle'%3RA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="entete" id="entete">
+    <div class="entete-interne">
+      <a class="logo" href="index.html" aria-label="Racing Alliance — Accueil">
+        <span class="logo-ecusson" aria-hidden="true">
+          <svg viewBox="0 0 40 44" focusable="false">
+            <path d="M2 2h36v24L20 42 2 26Z" fill="#081B3C"/>
+            <path d="M8 8h24v16L20 34 8 24Z" fill="none" stroke="#F5F1E6" stroke-width="2"/>
+            <text x="20" y="23" text-anchor="middle" font-size="13" font-weight="900" fill="#F5F1E6" font-family="Arial Black, Arial, sans-serif">RA</text>
+          </svg>
+        </span>
+        <span class="logo-texte">
+          <strong>Racing Alliance</strong>
+          <small>Saint-Louis · Sénégal</small>
+        </span>
+      </a>
+
+      <nav class="navigation" id="navigation" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html" data-page="index.html">Accueil</a></li>
+          <li><a href="club.html" data-page="club.html">Le club</a></li>
+          <li><a href="effectif.html" data-page="effectif.html">Effectif</a></li>
+          <li><a href="palmares.html" data-page="palmares.html">Palmarès</a></li>
+          <li><a href="maillots.html" data-page="maillots.html">Maillots</a></li>
+          <li><a href="contact.html" data-page="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="bouton-menu" id="bouton-menu" aria-expanded="false" aria-controls="navigation">
+        <span class="bouton-menu-barre" aria-hidden="true"></span>
+        <span class="bouton-menu-barre" aria-hidden="true"></span>
+        <span class="sr-only">Ouvrir le menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <section class="page-tete">
+      <p class="page-kicker" data-reveal>Maillots</p>
+      <h1 class="page-titre" data-reveal>Le fleuve,<br>cousu sur la poitrine.</h1>
+      <p class="page-intro" data-reveal>
+        Sélectionnez un maillot puis retournez-le&nbsp;: chaque tenue raconte un pan
+        de l’histoire de Saint-Louis.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="visionneuse-zone">
+
+        <div class="visionneuse-commandes" data-reveal>
+          <fieldset class="selecteur-groupe">
+            <legend>Choisir le maillot</legend>
+            <div class="selecteur-boutons" id="selection-maillot">
+              <button type="button" class="selecteur-bouton est-actif" data-kit="home" aria-pressed="true">Domicile</button>
+              <button type="button" class="selecteur-bouton" data-kit="away" aria-pressed="false">Extérieur</button>
+              <button type="button" class="selecteur-bouton" data-kit="third" aria-pressed="false">Third</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="selecteur-groupe">
+            <legend>Choisir la vue</legend>
+            <div class="selecteur-boutons" id="selection-face">
+              <button type="button" class="selecteur-bouton selecteur-face est-actif" data-face="front" aria-pressed="true">Face avant</button>
+              <button type="button" class="selecteur-bouton selecteur-face" data-face="back" aria-pressed="false">Face arrière</button>
+            </div>
+          </fieldset>
+        </div>
+
+        <figure class="visionneuse" data-reveal>
+          <div class="visionneuse-cadre">
+            <span class="visionneuse-etiquette" id="etiquette-maillot">Domicile — Face avant</span>
+            <img class="visionneuse-image"
+                 id="image-maillot"
+                 src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                 alt="Mockup du maillot domicile, face avant"
+                 width="640" height="720">
+            <div class="visionneuse-message" id="message-maillot" hidden>
+              <strong>Maquette indisponible</strong>
+              <p>Placez les fichiers dans <code>assets/kits/</code>&nbsp;:
+                 home-front.webp, home-back.webp, away-front.webp,
+                 away-back.webp, third-front.webp, third-back.webp
+                 (webp, png ou jpg acceptés).</p>
+            </div>
+          </div>
+          <figcaption class="visionneuse-legende" id="legende-maillot"></figcaption>
+        </figure>
+
+        <aside class="maillot-details" aria-live="polite">
+          <article class="maillot-fiche" data-fiche="home">
+            <h2>Domicile</h2>
+            <p class="maillot-devise">«&nbsp;Le bleu du crépuscule sur le fleuve.&nbsp;»</p>
+            <p>Bleu nuit profond avec col rond et poignets blancs. Cinq étoiles dorées
+               au-dessus de l’écusson, une par titre de champion. C’est le maillot
+               originel de 1948, à peine retouché depuis.</p>
+            <ul class="nuancier" aria-label="Couleurs du maillot domicile">
+              <li style="--couleur:#081B3C"><span>Bleu nuit</span></li>
+              <li style="--couleur:#FFFFFF"><span>Blanc</span></li>
+              <li style="--couleur:#C6A15B"><span>Or des étoiles</span></li>
+            </ul>
+          </article>
+
+          <article class="maillot-fiche" data-fiche="away" hidden>
+            <h2>Extérieur</h2>
+            <p class="maillot-devise">«&nbsp;Blanc comme les voiles sur le fleuve.&nbsp;»</p>
+            <p>Blanc immaculé traversé de fines rayures bleues verticales, en écho aux
+               voiles des pirogues guet-ndariennes. Col en V bleu nuit et numéros dorés.</p>
+            <ul class="nuancier" aria-label="Couleurs du maillot extérieur">
+              <li style="--couleur:#FFFFFF"><span>Blanc</span></li>
+              <li style="--couleur:#153E90"><span>Bleu roi</span></li>
+              <li style="--couleur:#081B3C"><span>Bleu nuit</span></li>
+            </ul>
+          </article>
+
+          <article class="maillot-fiche" data-fiche="third" hidden>
+            <h2>Third</h2>
+            <p class="maillot-devise">«&nbsp;La brume du matin sur la Digue.&nbsp;»</p>
+            <p>Bleu ciel «&nbsp;Brume du Fleuve&nbsp;» avec liseré doré au col et aux manches,
+               inspiré des brumes matinales d’harmattan qui recouvrent Saint-Louis.
+               Réservé aux grandes occasions.</p>
+            <ul class="nuancier" aria-label="Couleurs du maillot third">
+              <li style="--couleur:#9DBBE0"><span>Bleu ciel</span></li>
+              <li style="--couleur:#C6A15B"><span>Or</span></li>
+              <li style="--couleur:#081B3C"><span>Bleu nuit</span></li>
+            </ul>
+          </article>
+        </aside>
+
+      </div>
+    </section>
+
+    <section class="appel">
+      <div class="appel-interne" data-reveal>
+        <p class="appel-kicker">Contact</p>
+        <h2>Une question sur les maillots<br>ou sur le club&nbsp;?</h2>
+        <a class="bouton bouton-clair" href="contact.html">Écrire au club</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pied">
+    <div class="pied-interne">
+      <div class="pied-marque">
+        <strong>Racing Alliance</strong>
+        <p>Club de football — Saint-Louis du Sénégal.<br>Stade du Fleuve, quartier de Sor.</p>
+      </div>
+      <nav class="pied-nav" aria-label="Navigation de pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="club.html">Le club</a>
+        <a href="effectif.html">Effectif</a>
+        <a href="palmares.html">Palmarès</a>
+        <a href="maillots.html">Maillots</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="pied-note">© <span id="annee">2026</span> Racing Alliance — Tous droits réservés. Site vitrine sans backend.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
